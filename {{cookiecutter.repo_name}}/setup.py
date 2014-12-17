@@ -16,7 +16,8 @@ requirements = [
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'nose==1.3.4',
+    'NoseGAE==0.3.0'
 ]
 
 setup(
@@ -33,7 +34,7 @@ setup(
     package_dir={'{{ cookiecutter.repo_name }}':
                  '{{ cookiecutter.repo_name }}'},
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=requirements,  # NOTE: AppEngine requirements need to be copied into the project root. 
     license="BSD",
     zip_safe=False,
     keywords='{{ cookiecutter.repo_name }}',
