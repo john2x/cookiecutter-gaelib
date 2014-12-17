@@ -1,6 +1,6 @@
 # TODO: include this file in your project's app.yaml
 
 handlers:
-- url: /_{{ cookiecutter.project_name}}.*
-  script: {{ cookiecutter.project_name }}.handlers.main.app
+- url: /_{{ cookiecutter.repo_name }}.*
+  script: {{ cookiecutter.repo_name }}.handlers.main.app
 
